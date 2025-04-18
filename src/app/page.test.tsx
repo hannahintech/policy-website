@@ -8,12 +8,10 @@ it('renders homepage with welcome text and key links', () => {
   expect(
     screen.getByRole('heading', { name: 'Welcome to the Green Party Policy Website' }),
   ).toBeInTheDocument()
-  expect(screen.getByRole('heading', { name: 'Upcoming Events' })).toBeInTheDocument()
+  expect(screen.getByRole('heading', { name: 'Next Event' })).toBeInTheDocument()
+  expect(screen.getByRole('heading', { name: 'What is Green Party Policy?' })).toBeInTheDocument()
 
   expect(screen.getByText('Summer Policy Fest 2025')).toBeInTheDocument()
-  expect(screen.getByText('Winter Policy Fest 2025')).toBeInTheDocument()
-  expect(screen.getByText('Autumn Conference 2025')).toBeInTheDocument()
-
   expect(screen.getByText('Browse All Policies')).toBeInTheDocument()
-  expect(screen.getByText('Contact & Accreditation')).toBeInTheDocument()
+  expect(screen.getByText('Accreditation')).toBeInTheDocument()
 })

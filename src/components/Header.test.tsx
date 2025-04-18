@@ -12,7 +12,7 @@ describe('Header', () => {
 
   it('renders all navigation links', () => {
     render(<Header />)
-    const links = ['Policies', 'Process', 'Key Dates', 'PWGs', 'Contact']
+    const links = ['Policies', 'Process', 'Events', 'PWGs', 'Contact']
     links.forEach(text => {
       expect(screen.getByRole('link', { name: new RegExp(text, 'i') })).toBeInTheDocument()
     })

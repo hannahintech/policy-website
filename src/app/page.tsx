@@ -12,41 +12,28 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* Upcoming Events */}
+      {/* Next Event Highlight */}
       <section className="mb-12">
-        <h2 className="mb-4 font-heading text-2xl">Upcoming Events</h2>
-        <ul className="space-y-6">
-          <li className="rounded bg-fair/10 p-4 shadow-sm">
-            <h3 className="mb-1 text-xl font-semibold">Summer Policy Fest 2025</h3>
-            <p className="mb-2 text-sm">17–18 May, Birmingham and online</p>
-            <Link href="/fest/summer-2025" className="text-fair underline">
-              Read more about Summer Policy Fest
-            </Link>
-          </li>
-          <li className="rounded bg-fair/10 p-4 shadow-sm">
-            <h3 className="mb-1 text-xl font-semibold">Winter Policy Fest 2025</h3>
-            <p className="mb-2 text-sm">12–18 January, online</p>
-            <Link href="/fest/winter-2025" className="text-fair underline">
-              Read more about Winter Policy Fest
-            </Link>
-          </li>
-          <li className="rounded bg-fair/10 p-4 shadow-sm">
-            <h3 className="mb-1 text-xl font-semibold">Autumn Conference 2025</h3>
-            <p className="mb-2 text-sm">3–5 October, Bournemouth</p>
-            <Link href="/conference/autumn-2025" className="text-fair underline">
-              Read more about Autumn Conference
-            </Link>
-          </li>
-        </ul>
+        <h2 className="mb-4 font-heading text-2xl">Next Event</h2>
+        <div className="rounded bg-fair/10 p-4 shadow-sm">
+          <h3 className="mb-1 text-xl font-semibold">Summer Policy Fest 2025</h3>
+          <p className="mb-2 text-sm">17–18 May, Birmingham and online</p>
+          <Link href="/events/summer-2025" className="text-fair underline">
+            View full details
+          </Link>
+        </div>
       </section>
 
       {/* Learn About Policy Making */}
       <section className="mb-12">
-        <h2 className="mb-4 font-heading text-2xl">Understand Green Party Policy</h2>
+        <h2 className="mb-4 font-heading text-2xl">What is Green Party Policy?</h2>
         <ul className="grid gap-4 sm:grid-cols-2">
           <li className="rounded border border-gray-200 bg-white p-4 shadow-sm">
             <h3 className="text-lg font-semibold">Policy Process</h3>
-            <p className="mb-2 text-sm">Learn how our members shape party policy.</p>
+            <p className="mb-2 text-sm">
+              Learn how our members shape party policy through conference, consultation, and local
+              participation.
+            </p>
             <Link href="/process" className="text-sm text-fair underline">
               Explore the policy process
             </Link>
@@ -75,26 +62,10 @@ export default function HomePage() {
           </li>
           <li>
             <Link
-              href="/conference"
-              className="block rounded bg-fair/10 p-4 transition hover:bg-fair hover:text-white"
-            >
-              Past Conferences & AGMs
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/fest"
-              className="block rounded bg-fair/10 p-4 transition hover:bg-fair hover:text-white"
-            >
-              All Policy Fest Info
-            </Link>
-          </li>
-          <li>
-            <Link
               href="/contact"
               className="block rounded bg-fair/10 p-4 transition hover:bg-fair hover:text-white"
             >
-              Contact & Accreditation
+              Accreditation
             </Link>
           </li>
         </ul>
