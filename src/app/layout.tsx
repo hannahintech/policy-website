@@ -1,14 +1,14 @@
-import './globals.css';
-import { ReactNode } from 'react';
-import { Manrope, Bebas_Neue } from 'next/font/google';
+import './globals.css'
+import { ReactNode } from 'react'
+import { Manrope, Bebas_Neue } from 'next/font/google'
 
-const manrope = Manrope({ subsets: ['latin'], variable: '--font-body' });
-const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'], variable: '--font-heading' });
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-body' })
+const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'], variable: '--font-heading' })
 
 export const metadata = {
   title: 'GPEW Policy Website',
   description: 'Green Party Policy and Motions Site',
-};
+}
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -21,8 +21,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </div>
       </body>
     </html>
-  );
+  )
 }
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'

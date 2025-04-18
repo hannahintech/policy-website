@@ -1,32 +1,32 @@
-'use client';
+'use client'
 
-import { useParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useParams } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 const mdxMap: Record<string, () => Promise<any>> = {
   'example-policy': () => import('../data/example-policy.mdx'),
   // Add more slugs as needed
-};
+}
 
 export default function PolicyPage() {
-  const { slug } = useParams();
-  const [Content, setContent] = useState<React.ComponentType | null>(null);
+  const { slug } = useParams()
+  const [Content, setContent] = useState<React.ComponentType | null>(null)
 
   useEffect(() => {
-    const loader = mdxMap[slug as string];
-    if (!loader) return;
-    loader().then((mod) => setContent(() => mod.default));
-  }, [slug]);
+    const loader = mdxMap[slug as string]
+    if (!loader) return
+    loader().then(mod => setContent(() => mod.default))
+  }, [slug])
 
   if (!slug || !mdxMap[slug as string]) {
-    return <div className="p-6 text-red-600">404 – Policy not found</div>;
+    return <div className="p-6 text-red-600">404 – Policy not found</div>
   }
 
-  if (!Content) return <div className="p-6">Loading...</div>;
+  if (!Content) return <div className="p-6">Loading...</div>
 
   return (
     <article className="prose prose-lg max-w-3xl mx-auto py-8">
       <Content />
     </article>
-  );
+  )
 }

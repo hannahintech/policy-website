@@ -1,13 +1,13 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
+import Link from 'next/link'
 
 const policyList = [
   {
     slug: 'example-policy',
     title: 'Example Policy: A Green Future',
   },
-];
+]
 
 export default function PoliciesIndexPage() {
   return (
@@ -26,5 +26,5 @@ export default function PoliciesIndexPage() {
         ))}
       </ul>
     </div>
-  );
+  )
 }
