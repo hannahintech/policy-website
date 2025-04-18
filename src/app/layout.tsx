@@ -13,10 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${manrope.variable} ${bebas.variable}`}>
-      <body className="bg-white text-dark font-body">
-        <div className="min-h-screen flex flex-col">
+      <body className="bg-white font-body text-dark">
+        <div className="flex min-h-screen flex-col">
           <Header />
-          <main className="flex-grow px-4 sm:px-8 py-6">{children}</main>
+          <main className="flex-grow px-4 py-6 sm:px-8">{children}</main>
           <Footer />
         </div>
       </body>

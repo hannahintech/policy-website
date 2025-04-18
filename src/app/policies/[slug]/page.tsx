@@ -20,13 +20,13 @@ export default function PolicyPage() {
   }, [slug])
 
   if (!slug || !mdxMap[slug as string]) {
-    return <div className="p-6 text-red-600">404 – Policy not found</div>
+    return <div className="text-red-600 p-6">404 – Policy not found</div>
   }
 
   if (!Content) return <div className="p-6">Loading...</div>
 
   return (
-    <article className="prose prose-lg max-w-3xl mx-auto py-8">
+    <article className="prose prose-lg mx-auto max-w-3xl py-8">
       <Content />
     </article>
   )

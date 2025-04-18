@@ -3,6 +3,7 @@ import js from '@eslint/js'
 import ts from '@typescript-eslint/eslint-plugin'
 import parser from '@typescript-eslint/parser'
 import prettier from 'eslint-plugin-prettier'
+import tailwindcss from 'eslint-plugin-tailwindcss'
 
 export default [
   {
@@ -52,6 +53,17 @@ export default [
     },
     rules: {
       'prettier/prettier': 'warn',
+    },
+  },
+  {
+    files: ['**/*.tsx'],
+    plugins: {
+      tailwindcss,
+    },
+    rules: {
+      'tailwindcss/no-custom-classname': 'warn',
+      'tailwindcss/classnames-order': 'warn',
+      'tailwindcss/no-contradicting-classname': 'warn',
     },
   },
   js.configs.recommended,

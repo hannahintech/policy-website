@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-forest text-white text-sm py-6 mt-12">
-      <div className="max-w-5xl mx-auto px-4 text-center">
+    <footer className="mt-12 bg-forest py-6 text-sm text-white">
+      <div className="mx-auto max-w-5xl px-4 text-center">
         &copy; {new Date().getFullYear()} Green Party of England & Wales. All rights reserved.
       </div>
     </footer>

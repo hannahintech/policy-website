@@ -3,8 +3,8 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <header className="bg-fair text-white shadow-md">
-      <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-3xl font-heading tracking-wide">
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
+        <Link href="/" className="font-heading text-3xl tracking-wide">
           GPEW Policy
         </Link>
         <nav className="space-x-4 text-sm sm:text-base">
