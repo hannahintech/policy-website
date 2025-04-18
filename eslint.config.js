@@ -2,11 +2,14 @@
 import js from '@eslint/js'
 import ts from '@typescript-eslint/eslint-plugin'
 import parser from '@typescript-eslint/parser'
+import prettier from 'eslint-plugin-prettier'
 
 export default [
   {
+    ignores: ['**/*.mdx', '**/*.d.ts', 'node_modules', '.next', 'dist', 'out'],
+  },
+  {
     files: ['**/*.ts', '**/*.tsx'],
-    ignores: ['node_modules', '.next', 'dist', 'out'],
     languageOptions: {
       parser,
       parserOptions: {
@@ -45,7 +48,7 @@ export default [
   {
     files: ['**/*.{ts,tsx,js,jsx,json,md,mdx}'],
     plugins: {
-      prettier: require('eslint-plugin-prettier'),
+      prettier,
     },
     rules: {
       'prettier/prettier': 'warn',

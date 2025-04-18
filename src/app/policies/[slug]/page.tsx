@@ -2,15 +2,16 @@
 
 import { useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import type { ComponentType } from 'react'
 
-const mdxMap: Record<string, () => Promise<any>> = {
+const mdxMap: Record<string, () => Promise<{ default: ComponentType }>> = {
   'example-policy': () => import('../data/example-policy.mdx'),
   // Add more slugs as needed
 }
 
 export default function PolicyPage() {
   const { slug } = useParams()
-  const [Content, setContent] = useState<React.ComponentType | null>(null)
+  const [Content, setContent] = useState<ComponentType | null>(null)
 
   useEffect(() => {
     const loader = mdxMap[slug as string]
