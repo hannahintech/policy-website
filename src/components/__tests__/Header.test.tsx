@@ -5,7 +5,7 @@ import '@testing-library/jest-dom'
 describe('Header', () => {
   it('renders the site title', () => {
     render(<Header />)
-    const title = screen.getByRole('link', { name: /gpew policy/i })
+    const title = screen.getByRole('link', { name: 'GPEW Policy' })
     expect(title).toBeInTheDocument()
     expect(title).toHaveAttribute('href', '/')
   })
