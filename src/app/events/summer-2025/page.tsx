@@ -4,7 +4,7 @@ export default function SummerPolicyFestPage() {
   return (
     <main className="mx-auto max-w-4xl px-4 py-8 sm:px-8">
       <h1 className="mb-4 font-heading text-3xl">Summer Policy Fest 2025</h1>
-      <p className="mb-6 text-lg">17–18 May, Birmingham and online</p>
+      <p className="mb-6 text-lg">17-18 May, Birmingham and online</p>
 
       <section className="mb-10">
         <h2 className="mb-2 text-2xl font-semibold">What is Policy Fest?</h2>
@@ -19,12 +19,12 @@ export default function SummerPolicyFestPage() {
         <h2 className="mb-2 text-2xl font-semibold">Format and Timetable</h2>
         <ul className="list-disc space-y-2 pl-5">
           <li>
-            <strong>Saturday:</strong> "Connecting Policy with Politics" – exploring communication
+            <strong>Saturday:</strong> "Connecting Policy with Politics" - exploring communication
             between the policy community and elected members via case studies in democracy, climate,
             and nature.
           </li>
           <li>
-            <strong>Sunday:</strong> "Strengthening the Policy Process and Community" – training on
+            <strong>Sunday:</strong> "Strengthening the Policy Process and Community" - training on
             process, comms, and campaign messaging.
           </li>
           <li>

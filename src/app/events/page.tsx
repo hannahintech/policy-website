@@ -16,21 +16,21 @@ export default function EventsIndexPage() {
         <ul className="space-y-6">
           <li className="rounded bg-fair/10 p-4 shadow-sm">
             <h3 className="mb-1 text-xl font-semibold">Summer Policy Fest 2025</h3>
-            <p className="mb-1 text-sm">17–18 May, Birmingham and online</p>
+            <p className="mb-1 text-sm">17-18 May, Birmingham and online</p>
             <Link href="/events/summer-2025" className="text-fair underline">
               Event details
             </Link>
           </li>
           <li className="rounded bg-fair/10 p-4 shadow-sm">
             <h3 className="mb-1 text-xl font-semibold">Winter Policy Fest 2025</h3>
-            <p className="mb-1 text-sm">12–18 January, online</p>
+            <p className="mb-1 text-sm">12-18 January, online</p>
             <Link href="/events/winter-2025" className="text-fair underline">
               Event details
             </Link>
           </li>
           <li className="rounded bg-fair/10 p-4 shadow-sm">
             <h3 className="mb-1 text-xl font-semibold">Autumn Conference 2025</h3>
-            <p className="mb-1 text-sm">3–5 October, Bournemouth</p>
+            <p className="mb-1 text-sm">3-5 October, Bournemouth</p>
             <Link href="/events/autumn-conference-2025" className="text-fair underline">
               Event details
             </Link>

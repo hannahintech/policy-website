@@ -14,7 +14,7 @@ def format_pb_sections(text: str) -> str:
         title = match.group(2).strip()
         body = match.group(3).strip().replace('\n', ' ').strip()
         return f"""
-### PB{number} – {title}
+### PB{number} - {title}
 
 {body}
 """

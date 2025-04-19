@@ -8,7 +8,7 @@ export default function HomePage() {
         <h1 className="mb-4 font-heading text-4xl">Welcome to the Green Party Policy Website</h1>
         <p className="max-w-prose text-lg">
           This site helps members explore, shape, and understand Green Party policy. Discover how
-          our policy is made, what’s coming up, and how to get involved.
+          our policy is made, what's coming up, and how to get involved.
         </p>
       </section>
 
@@ -17,7 +17,7 @@ export default function HomePage() {
         <h2 className="mb-4 font-heading text-2xl">Next Event</h2>
         <div className="rounded bg-fair/10 p-4 shadow-sm">
           <h3 className="mb-1 text-xl font-semibold">Summer Policy Fest 2025</h3>
-          <p className="mb-2 text-sm">17–18 May, Birmingham and online</p>
+          <p className="mb-2 text-sm">17-18 May, Birmingham and online</p>
           <Link href="/events/summer-2025" className="text-fair underline">
             View full details
           </Link>

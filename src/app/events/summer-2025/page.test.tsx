@@ -6,7 +6,7 @@ describe('SummerPolicyFestPage', () => {
   it('renders the correct heading and date', () => {
     render(<SummerPolicyFestPage />)
     expect(screen.getByRole('heading', { name: 'Summer Policy Fest 2025' })).toBeInTheDocument()
-    expect(screen.getByText('17–18 May, Birmingham and online')).toBeInTheDocument()
+    expect(screen.getByText('17-18 May, Birmingham and online')).toBeInTheDocument()
   })
 
   it('contains expected sections and links', () => {

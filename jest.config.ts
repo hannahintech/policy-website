@@ -7,6 +7,7 @@ export default createJestConfig({
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
+    '\\.mdx$': '<rootDir>/__mocks__/mdxMock.cjs',
   },
   transform: {
     '^.+\\.(ts|tsx)$': ['ts-jest', { useESM: true }],
