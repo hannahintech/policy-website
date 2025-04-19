@@ -66,5 +66,15 @@ export default [
       'tailwindcss/no-contradicting-classname': 'warn',
     },
   },
+  {
+    files: ['scripts/**/*.ts'],
+    languageOptions: {
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        __dirname: 'readonly',
+      },
+    },
+  },
   js.configs.recommended,
 ]
