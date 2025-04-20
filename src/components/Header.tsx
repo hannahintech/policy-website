@@ -16,7 +16,7 @@ export default function Header() {
           href="/"
           className="text-center font-heading text-xl font-bold hover:underline sm:text-left"
         >
-          GPEW Policy
+          Green Party Policy
         </Link>
         <nav>
           <ul className="flex flex-wrap justify-center gap-4 sm:justify-end sm:gap-6">
