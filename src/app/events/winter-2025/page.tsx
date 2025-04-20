@@ -26,8 +26,8 @@ export default function WinterPolicyFestPage() {
       <section className="mb-10">
         <h2 className="mb-2 text-2xl font-semibold">Who Can Attend?</h2>
         <p>
-          Any Green Party member interested in policy development — whether you're an experienced
-          working group convenor or just curious to learn — is welcome to attend.
+          Any Green Party member interested in policy development - whether you're an experienced
+          working group convenor or just curious to learn - is welcome to attend.
         </p>
       </section>
 

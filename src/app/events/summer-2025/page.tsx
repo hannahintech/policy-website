@@ -9,7 +9,7 @@ export default function SummerPolicyFestPage() {
       <section className="mb-10">
         <h2 className="mb-2 text-2xl font-semibold">What is Policy Fest?</h2>
         <p>
-          Policy Fest is a hybrid event focused on how Green Party policies are made — not just what
+          Policy Fest is a hybrid event focused on how Green Party policies are made - not just what
           they say. Open to all members, it's a welcoming space for learning, collaboration, and
           development.
         </p>
@@ -56,7 +56,7 @@ export default function SummerPolicyFestPage() {
           B16 8SZ
         </p>
         <ul className="list-disc space-y-1 pl-5">
-          <li>No café onsite — bring your own food or eat nearby</li>
+          <li>No café onsite - bring your own food or eat nearby</li>
           <li>Optional packed lunch: £8.50 (order by 5 May)</li>
           <li>Shops and café are ~5 mins walk</li>
         </ul>

@@ -5,10 +5,10 @@ export default function NotFoundPage() {
     <main className="mx-auto max-w-3xl px-4 py-16 text-center">
       <h1 className="mb-4 font-heading text-4xl">Page Not Found</h1>
       <p className="mb-4 text-lg text-gray-700">
-        Sorry, we couldn’t find that page. It may have moved, or it may not exist yet.
+        Sorry, we couldn't find that page. It may have moved, or it may not exist yet.
       </p>
       <p className="mb-6 text-gray-700">
-        This is a new website we’re currently building — and we’d love your help.
+        This is a new website we're currently building - and we'd love your help.
       </p>
       <p className="mb-8 text-sm text-gray-600">
         <a href="mailto:policy@greenparty.org.uk" className="text-fair underline hover:text-forest">

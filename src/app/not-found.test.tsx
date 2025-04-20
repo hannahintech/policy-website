@@ -5,28 +5,37 @@ import '@testing-library/jest-dom'
 describe('NotFoundPage', () => {
   it('displays the correct heading and message', () => {
     render(<NotFoundPage />)
+
     expect(screen.getByRole('heading', { name: 'Page Not Found' })).toBeInTheDocument()
+
     expect(
       screen.getByText(
-        'Sorry, we couldn’t find that page. It may have moved, or it may not exist yet.',
+        "Sorry, we couldn't find that page. It may have moved, or it may not exist yet.",
       ),
+    ).toBeInTheDocument()
+
+    expect(
+      screen.getByText("This is a new website we're currently building - and we'd love your help."),
     ).toBeInTheDocument()
   })
 
   it('includes contact and GitHub links', () => {
     render(<NotFoundPage />)
-    expect(screen.getByRole('link', { name: 'Contact us' })).toHaveAttribute(
+
+    const contactLink = screen.getByRole('link', { name: 'Contact us' })
+    const githubLink = screen.getByRole('link', { name: 'suggest an improvement on GitHub' })
+
+    expect(contactLink).toHaveAttribute('href', 'mailto:policy@greenparty.org.uk')
+    expect(githubLink).toHaveAttribute(
       'href',
-      'mailto:policy@greenparty.org.uk',
-    )
-    expect(screen.getByRole('link', { name: 'suggest an improvement on GitHub' })).toHaveAttribute(
-      'href',
-      expect.stringContaining('github.com'),
+      'https://github.com/hannahintech/policy-website/issues',
     )
   })
 
-  it('includes a link to go back to the homepage', () => {
+  it('has a link to return to homepage', () => {
     render(<NotFoundPage />)
-    expect(screen.getByRole('link', { name: 'Back to Homepage' })).toHaveAttribute('href', '/')
+
+    const homeLink = screen.getByRole('link', { name: 'Back to Homepage' })
+    expect(homeLink).toHaveAttribute('href', '/')
   })
 })

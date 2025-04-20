@@ -6,7 +6,7 @@ export default function EventsIndexPage() {
       <h1 className="mb-6 font-heading text-3xl">Green Party Events</h1>
 
       <p className="mb-6 text-lg">
-        The Green Party hosts a range of member-driven events each year — from policy-making
+        The Green Party hosts a range of member-driven events each year - from policy-making
         weekends to conferences and training sessions. All members are welcome, whether you're
         shaping motions, learning how the process works, or connecting with others in the party.
       </p>

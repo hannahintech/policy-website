@@ -13,7 +13,7 @@ export default function AboutPage() {
             We support a radical transformation of society for the benefit of all and the planet.
           </li>
           <li>
-            Well-being is more than economics — it includes health, equity, and ecological
+            Well-being is more than economics - it includes health, equity, and ecological
             stability.
           </li>
           <li>The Earth's diversity and resources are finite and must be protected.</li>
