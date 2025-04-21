@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "generate:mdx-types": "ts-node scripts/generate-mdx-types.ts",
+    "generate:pss-index": "ts-node scripts/generate-pss-index.ts",
+    "generate:pss-map": "ts-node scripts/generate-pss-map.ts",
     "format:philosophy": "python scripts/format-philosophical-basis.py src/app/about/data/philosophical-basis.mdx",
     "prepare": "husky install",
     "dev": "pnpm next dev",
